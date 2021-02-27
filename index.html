@@ -11,9 +11,42 @@
 <body>
     <header>
         <nav>
-            
+            <div class="array-inputs">
+                <p>Array Size: </p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Algorithm Speed: </p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button type="button" class="btn btn-danger" id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">AlgoVisualizer</p>
+
+                <div class="algos">
+                    <button type="button" class="btn btn-primary" >Bubble</button>
+                    <button type="button" class="btn btn-primary" >Quick</button>
+                    <button type="button" class="btn btn-primary" >Heap</button>
+                </div>
+            </div>
+
         </nav>
     </header>
 
+    <section>
+
+        <div id="Info_Cont1">
+            <p>This is First Container</p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p>This is Second Container</p>
+        </div>
+
+    </section>
+    <footer></footer>
 </body>
 </html>
