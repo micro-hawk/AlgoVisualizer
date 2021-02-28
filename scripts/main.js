@@ -27,7 +27,7 @@ inp_as.addEventListener("input",update_array_size);
 
 
 function reset_array() {
-    
+    location.reload();
 }
 
 function generate_array()
