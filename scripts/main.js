@@ -6,6 +6,7 @@ Variable naming convention: <object>_<action>_<objectname>; Example -> Button_cl
 //Variables (BE CAREFUL THESE MIGHT BE USED IN OTHER JS FILES TOO)
 var inp_as=document.getElementById('a_size'),array_size=inp_as.value;
 var inp_gen=document.getElementById("a_generate");
+var inp_reset=document.getElementById("a_reset");
 var inp_aspeed=document.getElementById("a_speed");
 //var array_speed=document.getElementById('a_speed').value;
 
@@ -19,8 +20,15 @@ cont.style="flex-direction:row";
 
 //Array generation and updation.
 
+inp_reset.addEventListener("click",reset_array);
+
 inp_gen.addEventListener("click",generate_array);
 inp_as.addEventListener("input",update_array_size);
+
+
+function reset_array() {
+    
+}
 
 function generate_array()
 {
@@ -73,15 +81,9 @@ function runalgo()
     {
         case "Bubble":Bubble();
                         break;
-        case "Selection":Selection_sort();
-                        break;
-        case "Insertion":Insertion();
-                        break;
         case "Merge":Merge();
                         break;
         case "Quick":Quick();
-                        break;
-        case "Heap":Heap();
                         break;
     }
 }
