@@ -85,7 +85,7 @@ nav .header_right .algos {
   display: grid;
   -ms-grid-columns: (16.66667%);
       grid-template-columns: repeat(6, 16.66667%);
-  place-content: center;
+  place-content: right;
   padding: 2% 0%;
 }
 
@@ -99,7 +99,7 @@ nav .header_right .algos button {
 }
 
 nav .header_right .algos button:hover {
-  background-color: blue;
+  background-color: #3A3A3A;
   cursor: pointer;
 }
 
@@ -124,8 +124,11 @@ nav .header_right .algos .butt_selected:hover {
 }
 
 nav .header_right .algos .butt_unselected:hover {
-  background-color: blue;
+  background-color: #3A3A3A;
   cursor: pointer;
+}
+ nav .header_right {
+  
 }
 
 section {
